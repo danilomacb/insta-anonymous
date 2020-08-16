@@ -1,6 +1,6 @@
 chrome.webNavigation.onCompleted.addListener(
   (e) => {
-    console.log(e);
+    alert("instagram");
   },
   { url: [{ hostSuffix: "instagram.com" }] }
 );
