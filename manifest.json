@@ -1,0 +1,13 @@
+{
+  "name": "Instagram Anonymous",
+  "version": "1.0",
+  "description": "Use Instagram without an account",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "webNavigation"
+  ],
+  "manifest_version": 2
+}
