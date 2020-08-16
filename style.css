@@ -5,3 +5,7 @@
 .RnEpo._Yhr4 {
   display: none;
 }
+
+body {
+  overflow-y: auto !important;
+}

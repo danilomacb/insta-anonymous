@@ -2,19 +2,10 @@
   "name": "Instagram Anonymous",
   "version": "1.0",
   "description": "Use Instagram without an account",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "permissions": [
-    "webNavigation",
-    "activeTab"
-  ],
   "content_scripts": [
     {
       "matches": ["https://*.instagram.com/*"],
-      "css": ["style.css"],
-      "js": ["content.js"]
+      "css": ["style.css"]
     }
   ],
   "manifest_version": 2
