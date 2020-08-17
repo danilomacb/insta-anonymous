@@ -5,7 +5,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.instagram.com/*"],
-      "css": ["style.css"]
+      "css": ["style.css"],
+      "js": ["content.js"]
     }
   ],
   "manifest_version": 2
