@@ -1,22 +1,38 @@
 let images = document.getElementsByClassName("v1Nh3 kIKUG _bz0w");
-let tempImage;
+let firstExecution = true;
+let handlers = [];
 
 function imagesToLink() {
-  Array.prototype.forEach.call(images, (image) => {
-    tempImage = image;
-    image.removeEventListener("click", openImage);
-  });
+  if (firstExecution) {
+    Array.prototype.forEach.call(images, (image) => {
+      const wrappedFunc = openImage.bind(this, image);
+      handlers.push(wrappedFunc);
+      image.addEventListener("click", wrappedFunc);
+    });
+
+    firstExecution = false;
+
+    return;
+  }
+
+  removeHandlers();
 
   images = document.getElementsByClassName("v1Nh3 kIKUG _bz0w");
 
   Array.prototype.forEach.call(images, (image) => {
-    tempImage = image;
-    image.addEventListener("click", openImage);
+    image.addEventListener("click", openImage.bind(this, image));
   });
 }
 
-function openImage() {
-  window.open(tempImage.childNodes[0].href, "_blank");
+function openImage(image) {
+  window.open(image.childNodes[0].href, "_blank");
+}
+
+function removeHandlers() {
+  for (var i = 0; images.length > i; i++) {
+    images[i].removeEventListener("click", handlers[i]);
+  }
+  handlers = [];
 }
 
 imagesToLink();
