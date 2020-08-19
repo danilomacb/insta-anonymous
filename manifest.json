@@ -1,7 +1,8 @@
 {
   "name": "Insta Anonymous",
   "version": "1.0",
-  "description": "Use Instagram without an account!",
+  "description": "This extension hides login messages and screens.",
+  "author": "Danilo Macedo Bakun",
   "content_scripts": [
     {
       "matches": ["https://*.instagram.com/*"],
