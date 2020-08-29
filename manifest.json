@@ -3,6 +3,11 @@
   "version": "1.0",
   "description": "This extension hides login messages and screens.",
   "author": "Danilo Macedo Bakun",
+  "icons": {
+    "16": "images/logo16.png",
+    "32": "images/logo32.png",
+    "128": "images/logo128.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://*.instagram.com/*"],

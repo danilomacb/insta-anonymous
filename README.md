@@ -7,3 +7,7 @@
 5. Click on Load unpacked, select the insta-anonymous-master folder, and confirm.
 
 PS: Remember, if the folder was changed place, or it is removed, the extension will crash, so the only load unpacked after to put the folder where you want.
+
+# Credits
+
+Logo by [Paulo Henrique Lopes](https://twitter.com/euopaulo)
